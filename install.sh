@@ -16,7 +16,7 @@ if ! grep -Fxq "$line" ~/.bashrc; then
 else
     echo "Line already exists in .bashrc"
 fi
-
+source ~/.bashrc
 # Set Config
 # Define the directory and file path
 dir="$HOME/.config/nvim"
