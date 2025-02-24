@@ -64,6 +64,7 @@ Plug 'neanias/everforest-nvim', { 'branch': 'main' }
 Plug 'sheerun/vim-polyglot'
 Plug 'Valloric/YouCompleteMe'
 Plug 'dense-analysis/ale'
+Plug 'nvim-telescope/telescope.nvim'
 call plug#end()
 EOL
 )
