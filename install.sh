@@ -1,4 +1,5 @@
-
+# Install cmake
+sudo apt install cmake
 # Download Neovim
 curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux64.tar.gz
 sudo rm -rf /opt/nvim
@@ -49,6 +50,11 @@ nnoremap <leader>ff <cmd>Telescope find_files<cr>
 nnoremap <leader>fg <cmd>Telescope live_grep<cr>
 nnoremap <leader>fb <cmd>Telescope buffers<cr>
 nnoremap <leader>fh <cmd>Telescope help_tags<cr>
+let g:ale_linters = {  
+\   'python': ['pylint'],  
+\}
+let g:ale_lint_on_text_changed = 'always'
+let g:ale_virtualtext_cursor = 1
 EOL
 
 echo "init.vim file created at $file"
