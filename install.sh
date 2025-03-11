@@ -1,5 +1,10 @@
 # Install cmake
 sudo apt install cmake
+# Install pipx
+python3 -m pip install --user pipx
+python3 -m pipx ensurepath
+# Install pyling
+pipx install pylint
 # Download Neovim
 curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux64.tar.gz
 sudo rm -rf /opt/nvim
